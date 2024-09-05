@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hibernate_Mapping.iml" filepath="$PROJECT_DIR$/Hibernate_Mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/One_To_Many_Mapping.iml" filepath="$PROJECT_DIR$/One_To_Many_Mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/One_to_One_Mapping.iml" filepath="$PROJECT_DIR$/One_to_One_Mapping.iml" />
+    </modules>
+  </component>
+</project>
