@@ -14,7 +14,7 @@ public class Address {
     private String housingNumber;
     private String street;
     private String city;
-    @ManyToMany (mappedBy = "address")
+    @ManyToMany (mappedBy = "address")//inverse side
     private List<Student> students;
 
     public Address() {

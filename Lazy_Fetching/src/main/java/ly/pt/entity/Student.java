@@ -1,6 +1,9 @@
 package ly.pt.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 import java.util.List;
 
@@ -9,7 +12,7 @@ public class Student {
     @Id
     private int studentId;
     private String name;
-    @OneToMany (mappedBy = "student")//inverse side
+    @OneToMany(mappedBy = "student" , fetch = FetchType.LAZY)//inverse side
     private List<Address> address;
 
 
@@ -44,5 +47,14 @@ public class Student {
 
     public void setAddress(List<Address> address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId=" + studentId +
+                ", name='" + name + '\'' +
+                ", address=" + address +
+                '}';
     }
 }

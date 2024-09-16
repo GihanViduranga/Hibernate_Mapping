@@ -2,8 +2,6 @@ package ly.pt.entity;
 
 import jakarta.persistence.*;
 
-import java.util.List;
-
 @Entity
 public class Address {
     @Id
@@ -64,5 +62,16 @@ public class Address {
 
     public void setStudent(Student student) {
         this.student = student;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "addressId=" + addressId +
+                ", housingNumber='" + housingNumber + '\'' +
+                ", street='" + street + '\'' +
+                ", city='" + city + '\'' +
+                ", student=" + student +
+                '}';
     }
 }

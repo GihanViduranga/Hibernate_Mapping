@@ -12,7 +12,7 @@ public class Student {
     @Id
     private int studentId;
     private String name;
-    @ManyToMany
+    @ManyToMany//Owner's side
     private List<Address> address;
 
 
